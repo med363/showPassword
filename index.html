@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>input_password</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script >
+        $(document).ready(()=>{
+         $('#open').click(()=>{
+            $('input').attr('type','text');
+            $('#open').hide();
+            $('#close').show();
+         })
+
+        $('#close').click(()=>{
+            $('input').attr('type','password');
+            $('#close').hide();
+            $('#open').show();
+        })
+        })
+    </script>
+</head>
+<body>
+    <div class="input-container">
+        <div class="input-group">
+            <input type="password" placeholder="Enter your password"/>
+                <i id="open"  class="icon-eye-open"></i>
+                <i id="close"  style="display:none;" class="icon-eye-close"></i>
+        </div>
+    </div>
+    
+</body>
+</html>
